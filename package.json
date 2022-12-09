@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch ./sass/main.scss:./Documents/Projet-3-OC-Axel/main.css"
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Flexyyble/Projet-3-OC-Axel/issues"
   },
-  "homepage": "https://github.com/Flexyyble/Projet-3-OC-Axel#readme"
+  "homepage": "https://github.com/Flexyyble/Projet-3-OC-Axel#readme",
+  "dependencies": {
+    "sass": "^1.56.2"
+  }
 }
