@@ -219,4 +219,9 @@ h3 {
   float: right;
 }
 
+.card_content-icon:hover {
+  background-image: linear-gradient(176deg, #FF79DA 0%, #9356DC 100%) !important;
+  background-size: contain;
+}
+
 /*# sourceMappingURL=style.css.map */

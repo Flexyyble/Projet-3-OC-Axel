@@ -113,3 +113,8 @@
     height: 30px !important;
     float: right;
 }
+
+.card_content-icon:hover {
+    background-image: $bg-gradient !important;
+    background-size:contain;
+}
