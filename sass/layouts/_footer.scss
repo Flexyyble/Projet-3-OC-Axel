@@ -1,0 +1,30 @@
+.footer-bg {
+    background-color: #323232;
+}
+
+.footer_container-logo {
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 4px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+
+.footer_logo-style {
+    width: 130px;
+}
+
+.footer_list-style {
+    list-style: none;
+    color: white;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer_list-icon {
+    height: 15px;
+    width: 15px;
+    margin-right: 8px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}

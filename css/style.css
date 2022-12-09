@@ -6,9 +6,115 @@ body {
   box-sizing: border-box;
 }
 
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+p, h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+.typo-center {
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.bold {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 30px;
+  margin-top: 35px;
+}
+
+h3 {
+  font-size: 21px;
+}
+
+.header_container-logo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 4px;
+}
+
+.header_logo-style {
+  width: 200px;
+  margin-bottom: 15px;
+}
+
+.header_container-localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ececec;
+  height: 50px;
+  box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.header_localisation-position {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.header_localisation-size {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-bg {
+  background-color: #323232;
+}
+
+.footer_container-logo {
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 4px;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+
+.footer_logo-style {
+  width: 130px;
+}
+
+.footer_list-style {
+  list-style: none;
+  color: white;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer_list-icon {
+  height: 15px;
+  width: 15px;
+  margin-right: 8px;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+
+.presentation_button {
+  color: white;
+  font-size: 20px;
+  width: 270px;
+  height: 60px;
+  background: linear-gradient(176deg, #FF79DA 0%, #9356DC 100%);
+  border: none;
+  border-radius: 30px;
+  margin-bottom: 30px;
+}
+
 /** PRESENTATION PRODUIT **/
 .wrapper {
-  padding: 15px;
+  padding: 20px;
 }
 
 .wrapper-bg {
@@ -80,6 +186,13 @@ body {
 }
 
 /** RESTAURANTS **/
+.card_list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 20px;
+}
+
 .container_card {
   background-color: white;
   border-radius: 15px;
@@ -87,6 +200,7 @@ body {
 
 .card_content_text {
   padding: 15px;
+  margin-top: 10px;
 }
 
 .card_content img {
@@ -94,84 +208,15 @@ body {
   width: 100%;
   height: 100%;
   max-height: 180px;
-  object-position: 50% 115%;
+  object-position: 50% 65%;
   border-radius: 15px 15px 0px 0px;
   margin-bottom: -10px;
 }
 
-* {
-  font-family: "Roboto", sans-serif;
-}
-
-p, h1, h2, h3, h4, h5 {
-  margin: 0;
-}
-
-.typo-center {
-  text-align: center;
-}
-
-p {
-  font-size: 20px;
-  font-weight: 100;
-}
-
-.bold {
-  font-weight: 400;
-  font-size: 16px;
-}
-
-h1 {
-  font-size: 30px;
-  margin-top: 35px;
-}
-
-h3 {
-  font-size: 21px;
-}
-
-.header_container-logo {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-top: 25px;
-  margin-bottom: 4px;
-}
-
-.header_logo-style {
-  width: 200px;
-  margin-bottom: 15px;
-}
-
-.header_container-localisation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ececec;
-  height: 50px;
-  box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.15);
-}
-
-.header_localisation-position {
-  display: flex;
-  align-items: baseline;
-  gap: 10px;
-}
-
-.header_localisation-size {
-  width: 20px;
-  height: 20px;
-}
-
-.presentation_button {
-  color: white;
-  font-size: 20px;
-  width: 270px;
-  height: 60px;
-  background: linear-gradient(176deg, #FF79DA 0%, #9356DC 100%);
-  border: none;
-  border-radius: 30px;
-  margin-bottom: 30px;
+.card_content-icon {
+  width: 30px !important;
+  height: 30px !important;
+  float: right;
 }
 
 /*# sourceMappingURL=style.css.map */
