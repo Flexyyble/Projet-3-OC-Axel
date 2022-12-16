@@ -136,8 +136,9 @@
 .card_icon-bg {
     float: right;
 }
+
 .card_icon-bg i {
-    color:black;
+    color: black;
 }
 
 .card_icon-bg:hover i {
@@ -153,4 +154,24 @@
 
 .fa-regular {
     font-weight: 400;
+}
+
+.list_plates-label {
+    background-color: #fafafa;
+    border-radius: 20px;
+    height: 60px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    padding: 15px;
+    box-shadow: 0px 1px 1.5px rgb(0 0 0 / 4%), 0px 11px 12px rgb(0 0 0 / 8%);
+}
+
+.plates_label-position {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15px;
 }
