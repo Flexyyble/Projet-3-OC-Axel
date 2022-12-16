@@ -94,9 +94,7 @@
     margin-top: 10px;
 }
 
-.card_content {
-
-}
+.card_content {}
 
 .card_content img {
     object-fit: cover;
@@ -109,12 +107,27 @@
 }
 
 .card_content-icon {
-    width: 30px !important;
-    height: 30px !important;
-    float: right;
+    font-size: 20px;
 }
 
-.card_content-icon:hover {
-    background-image: $bg-gradient !important;
-    background-size:contain;
+.card_icon-bg {
+    float: right;
+}
+.card_icon-bg i {
+    color:black;
+}
+
+.card_icon-bg:hover i {
+    background: $bg-gradient;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.fa-regular:hover {
+    font-weight: 900;
+}
+
+.fa-regular {
+    font-weight: 400;
 }
