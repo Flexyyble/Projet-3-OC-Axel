@@ -11,6 +11,11 @@ p {
     font-weight: 100;
 }
 
+article p {
+    font-size: 18px;
+    margin-top: 4px;
+}
+
 .text_label {
     font-size: 13px;
 }
@@ -50,4 +55,13 @@ h6 {
     font-size: 15px;
     font-weight: bold;
     color: rgb(61, 61, 61);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li a {
+    color: white;
 }

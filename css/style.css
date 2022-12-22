@@ -23,6 +23,11 @@ p {
   font-weight: 100;
 }
 
+article p {
+  font-size: 18px;
+  margin-top: 4px;
+}
+
 .text_label {
   font-size: 13px;
 }
@@ -64,6 +69,15 @@ h6 {
   color: rgb(61, 61, 61);
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li a {
+  color: white;
+}
+
 .header_container-logo {
   display: flex;
   justify-content: center;
@@ -95,6 +109,13 @@ h6 {
 .header_localisation-size {
   width: 20px;
   height: 20px;
+}
+
+.header_button-position {
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  margin-left: 3%;
 }
 
 .footer-bg {
@@ -137,6 +158,12 @@ h6 {
   border: none;
   border-radius: 30px;
   margin-bottom: 30px;
+}
+
+.header_back-button {
+  background: none;
+  border: none;
+  font-size: 25px;
 }
 
 /** PRESENTATION PRODUIT **/
@@ -200,10 +227,12 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  margin-left: -5%;
 }
 
 .use_list_component-label {
-  background-color: #fafafa;
+  background-color: #fcf9f9;
   border-radius: 20px;
   height: 60px;
   width: 300px;
@@ -241,6 +270,7 @@ h6 {
 .container_card {
   background-color: white;
   border-radius: 15px;
+  color: black;
 }
 
 .card_content_text {
@@ -250,7 +280,21 @@ h6 {
 
 .restaurant_content_text {
   padding: 15px;
-  margin-top: 10px;
+  text-decoration: none;
+}
+
+.card_label-position {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card_label-style {
+  position: absolute;
+  background-color: #99E2D0;
+  padding: 7px;
+  border-radius: 4px;
+  color: #278870;
+  font-size: 14px;
 }
 
 .card_content img {

@@ -61,10 +61,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    margin-left: -5%;
 }
 
 .use_list_component-label {
-    background-color: #fafafa;
+    background-color: #fcf9f9;
     border-radius: 20px;
     height: 60px;
     width: 300px;
@@ -105,6 +107,7 @@
 .container_card {
     background-color: white;
     border-radius: 15px;
+    color: black;
 }
 
 .card_content_text {
@@ -114,10 +117,22 @@
 
 .restaurant_content_text {
     padding: 15px;
-    margin-top: 10px;
+    text-decoration: none;
 }
 
-.card_content {}
+.card_label-position {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card_label-style {
+    position: absolute;
+    background-color: $third;
+    padding: 7px;
+    border-radius: 4px;
+    color: darken($color: $third, $amount: 40%) ;
+    font-size: 14px;
+}
 
 .card_content img {
     object-fit: cover;

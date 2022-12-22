@@ -22,11 +22,18 @@
 
 .header_localisation-position {
     display: flex;
-    align-items:baseline;
+    align-items: baseline;
     gap: 10px;
 }
 
 .header_localisation-size {
     width: 20px;
     height: 20px;
+}
+
+.header_button-position {
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    margin-left: 3%;
 }
