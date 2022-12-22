@@ -265,7 +265,6 @@ li a {
 .use_list_component-display {
   display: flex;
   align-items: center;
-  padding: 0px !important;
 }
 
 .use_list_component-bullet {
@@ -428,7 +427,6 @@ li a {
   border-radius: 0 20px 20px 0;
   width: 0px;
   height: 60px;
-  padding: 0;
   transition: width 2s;
 }
 
