@@ -1,100 +1,3 @@
-/** PRESENTATION PRODUIT **/
-
-.wrapper {
-    padding: 20px;
-}
-
-.wrapper-bg {
-    background-color: #f5f5f5;
-}
-
-.wrapper-bg-restaurant {
-    background-color: #f5f5f5;
-    border-radius: 35px 35px;
-    margin-top: 54%;
-}
-
-.header_content img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    object-position: 50% 65%;
-}
-
-.header_content {
-    position: absolute;
-    z-index: -1;
-}
-
-.presentation_button-container {
-    display: flex;
-    justify-content: center;
-}
-
-.presentation_container-display {
-    gap: 20px;
-    display: flex;
-    flex-direction: column;
-}
-
-/** FONCTIONNEMENT **/
-
-.use_list-display {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    align-items: center;
-    margin-bottom: 44px;
-}
-
-.use_list_component-display {
-    display: flex;
-    align-items: center;
-}
-
-.use_list_component-bullet {
-    border-radius: 50%;
-    height: 30px;
-    width: 30px;
-    background-color: #9356dc;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: -15px;
-    z-index: 1;
-}
-
-.use_list_component-label {
-    background-color: #fcf9f9;
-    border-radius: 20px;
-    height: 60px;
-    width: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    font-size: 18px;
-    gap: 10px;
-    box-shadow:
-        0px 1px 1.5px rgba(0, 0, 0, 0.039),
-        0px 11px 12px rgba(0, 0, 0, 0.08);
-}
-
-.use_list_component-clr {
-    width: 15px;
-    height: 15px;
-    margin-left: 20px;
-    filter: invert(53%) sepia(7%) saturate(9%) hue-rotate(355deg) brightness(95%) contrast(85%);
-}
-
-.use_list_component-clr:hover {
-    filter: invert(42%) sepia(53%) saturate(3986%) hue-rotate(243deg) brightness(92%) contrast(87%);
-}
-
-.use_list_component-label:hover {
-    background-color: $primary-opacity;
-}
-
 /** RESTAURANTS **/
 
 .card_list {
@@ -207,3 +110,41 @@
     align-items: center;
     height: 15px;
 }
+
+
+/****************** ANIMATIONS ***************/ 
+
+.slide-bottom {
+    animation: slide-bottom 0.5s ease-out both;
+}
+
+.fade-in {
+    animation: fade-in 1s ease-in-out 0s 1 normal none;
+}
+
+/**************** KEYFRAMES ****************/
+
+/* --------------SLIDE BOTTOM--------------*/
+
+@keyframes slide-bottom {
+    0% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* ------------END SLIDE BOTTOM--------------*/
+/* -----------------FADE IN------------------*/
+
+@keyframes fade-in{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* ---------------END FADE IN----------------*/
