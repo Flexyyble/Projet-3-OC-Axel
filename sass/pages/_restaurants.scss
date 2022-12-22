@@ -111,8 +111,41 @@
     height: 15px;
 }
 
+.added_plate-anim {
+    justify-content: center;
+    align-items: center;
+    background-color: $third;
+    border-radius: 0 20px 20px 0;
+    width: 0px;
+    height: 60px;
+    padding: 0;
+    transition: width 2s;
+}
 
-/****************** ANIMATIONS ***************/ 
+.added_plate-anim:hover {
+    width: 80px;
+}
+
+// .use_list_component-display {
+//     &:hover {
+//         .added_plate-anim {
+//             display: flex;
+//             width: 15%;
+//             @include slide-left
+//         }
+//         &.fa-circle-check {
+//             @include rotate-center;
+//         }
+//     }
+// }
+
+.fa-circle-check {
+    color: white;
+    font-size: 25px;
+}
+
+
+/****************** ANIMATIONS ***************/
 
 .slide-bottom {
     animation: slide-bottom 0.5s ease-out both;
@@ -122,14 +155,23 @@
     animation: fade-in 1s ease-in-out 0s 1 normal none;
 }
 
+.slide-left {
+    animation: slide-left 1s ease alternate;
+}
+
+.rotate-center {
+    animation: rotate-center 0.6s ease-in-out;
+}
+
 /**************** KEYFRAMES ****************/
 
 /* --------------SLIDE BOTTOM--------------*/
 
 @keyframes slide-bottom {
     0% {
-        transform: translateY(-100px);
+        transform: translateY(50px);
     }
+
     100% {
         transform: translateY(0px);
     }
@@ -138,13 +180,50 @@
 /* ------------END SLIDE BOTTOM--------------*/
 /* -----------------FADE IN------------------*/
 
-@keyframes fade-in{
+@keyframes fade-in {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
 }
 
-/* ---------------END FADE IN----------------*/
+/* --------------END FADE IN-----------------*/
+/* ---------------SLIDE LEFT-----------------*/
+
+// @keyframes slide-left {
+//     0% {
+//         transform: scaleX(0.5);
+//     }
+
+//     100% {
+//         transform: scaleX(1);
+//     }
+// }
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(100px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+/* -------------END SLIDE LEFT---------------*/
+/* --------------ROTATE CENTER---------------*/
+
+@keyframes rotate-center {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* -----------END ROTATE CENTER---------------*/
