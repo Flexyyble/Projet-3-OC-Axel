@@ -101,7 +101,25 @@
     justify-content: center;
     gap: 6px;
     padding: 15px;
+    transition: width 0.3s, border-radius 0.3s;
     box-shadow: 0px 1px 1.5px rgb(0 0 0 / 4%), 0px 11px 12px rgb(0 0 0 / 8%);
+}
+
+.list_plates-label:hover {
+    border-radius: 20px 0px 0px 20px;
+    width: 85%;
+}
+
+.list_plates-label p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.list_plates-label h3 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .plates_label-position {
@@ -111,38 +129,32 @@
     height: 15px;
 }
 
-.added_plate-anim {
-    justify-content: center;
-    align-items: center;
+.plates_check-animation {
     background-color: $third;
-    border-radius: 0 20px 20px 0;
-    width: 0px;
+    width: 100%;
+    border-radius: 20px;
     height: 60px;
-    transition: width 2s;
+    position: relative;
+    z-index: 1;
 }
-
-.added_plate-anim:hover {
-    width: 80px;
-}
-
-// .use_list_component-display {
-//     &:hover {
-//         .added_plate-anim {
-//             display: flex;
-//             width: 15%;
-//             @include slide-left
-//         }
-//         &.fa-circle-check {
-//             @include rotate-center;
-//         }
-//     }
-// }
 
 .fa-circle-check {
+    position: absolute;
     color: white;
     font-size: 25px;
+    top: 17px;
+    right: 0px;
+    z-index: -1;
 }
 
+.plates_check-animation {
+    &:hover {
+        .fa-circle-check {
+            transform: translateX(-15px) rotate(360deg);
+            transition: 0.75s;
+        }
+    }
+}
 
 /****************** ANIMATIONS ***************/
 
@@ -152,14 +164,6 @@
 
 .fade-in {
     animation: fade-in 1s ease-in-out 0s 1 normal none;
-}
-
-.slide-left {
-    animation: slide-left 1s ease alternate;
-}
-
-.rotate-center {
-    animation: rotate-center 0.6s ease-in-out;
 }
 
 /**************** KEYFRAMES ****************/
@@ -190,39 +194,3 @@
 }
 
 /* --------------END FADE IN-----------------*/
-/* ---------------SLIDE LEFT-----------------*/
-
-// @keyframes slide-left {
-//     0% {
-//         transform: scaleX(0.5);
-//     }
-
-//     100% {
-//         transform: scaleX(1);
-//     }
-// }
-
-@keyframes slide-left {
-    0% {
-        transform: translateX(100px);
-    }
-
-    100% {
-        transform: translateX(0px);
-    }
-}
-
-/* -------------END SLIDE LEFT---------------*/
-/* --------------ROTATE CENTER---------------*/
-
-@keyframes rotate-center {
-    0% {
-        transform: rotate(0);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-/* -----------END ROTATE CENTER---------------*/
