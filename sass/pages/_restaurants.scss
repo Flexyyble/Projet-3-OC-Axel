@@ -148,6 +148,12 @@
 }
 
 .plates_check-animation {
+    &.fa-circle-check {
+        ::after {
+            transform: translateX(15px);
+            transition: 0.75s;
+        }
+    }
     &:hover {
         .fa-circle-check {
             transform: translateX(-15px) rotate(360deg);

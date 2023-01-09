@@ -469,6 +469,10 @@ li a {
   z-index: -1;
 }
 
+.plates_check-animation.fa-circle-check ::after {
+  transform: translateX(15px);
+  transition: 0.75s;
+}
 .plates_check-animation:hover .fa-circle-check {
   transform: translateX(-15px) rotate(360deg);
   transition: 0.75s;
