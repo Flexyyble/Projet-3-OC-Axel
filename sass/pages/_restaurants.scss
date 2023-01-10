@@ -144,20 +144,20 @@
     font-size: 25px;
     top: 17px;
     right: 0px;
-    z-index: -1;
+    z-index: -100;
 }
 
 .plates_check-animation {
-    &.fa-circle-check {
-        ::after {
-            transform: translateX(15px);
-            transition: 0.75s;
-        }
-    }
     &:hover {
         .fa-circle-check {
             transform: translateX(-15px) rotate(360deg);
             transition: 0.75s;
+        }
+    }
+    &:not(:hover) {
+        .fa-circle-check {
+            transform: translateX(15px) rotate(none);
+            transition: 0.15s;
         }
     }
 }
@@ -165,7 +165,7 @@
 /****************** ANIMATIONS ***************/
 
 .slide-bottom {
-    animation: slide-bottom 0.5s ease-out both;
+    animation: slide-bottom 0.75s ease-out both;
 }
 
 .fade-in {
