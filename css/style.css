@@ -132,12 +132,6 @@ li a {
   color: white;
 }
 
-@media all and (min-width: 600px) and (max-width: 992px) {
-  .use_list-display {
-    display: flex;
-    flex-direction: row;
-  }
-}
 .header_container-logo {
   display: flex;
   justify-content: center;
@@ -396,6 +390,7 @@ li a {
 
 .card_content {
   position: relative;
+  width: 100%;
 }
 
 .card_content_text {
