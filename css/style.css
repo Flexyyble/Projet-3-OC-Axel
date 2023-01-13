@@ -132,6 +132,10 @@ li a {
   color: white;
 }
 
+@media all and (min-width: 600px) and (max-width: 992px) {
+  /************************************ HOMEPAGE ******************************************/
+  /*********************************** RESTAURANTS ****************************************/
+}
 .header_container-logo {
   display: flex;
   justify-content: center;
