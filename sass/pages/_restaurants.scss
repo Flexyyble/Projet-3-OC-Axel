@@ -136,6 +136,7 @@
     height: 60px;
     position: relative;
     z-index: 1;
+    overflow: hidden;
 }
 
 .fa-circle-check {
@@ -150,14 +151,14 @@
 .plates_check-animation {
     &:hover {
         .fa-circle-check {
-            transform: translateX(-15px) rotate(360deg);
+            transform: translateX(-50%) rotate(360deg);
             transition: 0.75s;
         }
     }
     &:not(:hover) {
         .fa-circle-check {
-            transform: translateX(15px) rotate(none);
-            transition: 0.15s;
+            transform: translateX(50%) rotate();
+            transition: 0.25s;
         }
     }
 }
