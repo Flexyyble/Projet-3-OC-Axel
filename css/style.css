@@ -147,7 +147,7 @@ li a {
   }
   .wrapper-bg .card_list {
     flex-direction: row !important;
-    flex-wrap: wrap !important;
+    overflow-x: scroll !important;
   }
   .card_content {
     width: 450px !important;
