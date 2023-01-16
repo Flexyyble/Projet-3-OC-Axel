@@ -35,6 +35,11 @@
         font-size: 21px;
     }
 
+    .header_content img {
+        height: 100vh;
+        width: 211%;
+    }
+
     .wrapper-bg-restaurant {
         margin-top: 20%;
         flex-wrap: wrap;
@@ -44,4 +49,8 @@
         width: 95%;
     }
 
+    .footer-bg {
+        position: relative;
+        bottom: 0;
+    }
 }
