@@ -132,9 +132,41 @@ li a {
   color: white;
 }
 
-@media all and (min-width: 600px) and (max-width: 992px) {
+@media all and (min-width: 993px) {
   /************************************ HOMEPAGE ******************************************/
+  .use_list-display {
+    justify-content: center !important;
+    flex-direction: row !important;
+    gap: 35px !important;
+  }
+  .use_list-display .use_list_component-display {
+    width: 266px !important;
+  }
+  .use_list_component-bullet {
+    height: 25px !important;
+  }
+  .wrapper-bg .card_list {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+  }
+  .card_content {
+    width: 450px !important;
+  }
+  .footer_list-style {
+    flex-direction: row !important;
+    gap: 45px !important;
+  }
   /*********************************** RESTAURANTS ****************************************/
+  h4 {
+    font-size: 21px !important;
+  }
+  .wrapper-bg-restaurant {
+    margin-top: 20% !important;
+    flex-wrap: wrap !important;
+  }
+  .list_plates-label:hover {
+    width: 95% !important;
+  }
 }
 .header_container-logo {
   display: flex;
