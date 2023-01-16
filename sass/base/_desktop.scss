@@ -2,46 +2,46 @@
     /************************************ HOMEPAGE ******************************************/
 
     .use_list-display {
-        justify-content: center !important;
-        flex-direction: row !important;
-        gap: 35px !important;
+        justify-content: center;
+        flex-direction: row;
+        gap: 35px;
     }
 
     .use_list-display .use_list_component-display {
-        width: 266px !important;
+        width: 266px;
     }
 
     .use_list_component-bullet {
-        height: 25px !important;
+        height: 25px;
     }
 
     .wrapper-bg .card_list {
-        flex-direction: row !important;
-        overflow-x: scroll !important;
+        flex-direction: row;
+        overflow-x: scroll;
     }
 
     .card_content {
-        width: 450px !important;
+        width: 450px;
     }
 
     .footer_list-style {
-        flex-direction: row !important;
-        gap: 45px !important;
+        flex-direction: row;
+        gap: 45px;
     }
 
     /*********************************** RESTAURANTS ****************************************/
 
     h4 {
-        font-size: 21px !important;
+        font-size: 21px;
     }
 
     .wrapper-bg-restaurant {
-        margin-top: 20% !important;
-        flex-wrap: wrap !important;
+        margin-top: 20%;
+        flex-wrap: wrap;
     }
 
     .list_plates-label:hover {
-        width: 95% !important;
+        width: 95%;
     }
 
 }
