@@ -534,8 +534,8 @@ li a {
   transition: 0.5s;
 }
 .plates_check-animation:not(:hover) .fa-circle-check {
-  transform: translateX(50%) rotate();
-  transition: 0.5s;
+  transform: translateX(50%);
+  transition: 0.5s
 }
 
 /****************** ANIMATIONS ***************/
