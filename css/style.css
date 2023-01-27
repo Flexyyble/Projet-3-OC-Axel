@@ -157,6 +157,8 @@ li a {
 .header_localisation-position {
   display: flex;
   align-items: baseline;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
 }
 
@@ -232,6 +234,7 @@ li a {
 .container {
   width: min(100% - 0px);
   margin-inline: auto;
+  max-width: 1800px;
 }
 
 .wrapper {
@@ -580,10 +583,10 @@ li a {
   }
   .wrapper-bg .card_list {
     flex-direction: row;
-    overflow-x: scroll;
+    padding: 20px;
   }
   .card_content {
-    width: 450px;
+    width: 400px;
   }
   .footer_list-style {
     flex-direction: row;
