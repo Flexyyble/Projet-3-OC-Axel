@@ -222,6 +222,7 @@ li a {
   background: none;
   border: none;
   font-size: 25px;
+  cursor: pointer;
 }
 
 .presentation_button:hover {
@@ -535,7 +536,7 @@ li a {
 }
 .plates_check-animation:not(:hover) .fa-circle-check {
   transform: translateX(50%);
-  transition: 0.5s
+  transition: 0.5s;
 }
 
 /****************** ANIMATIONS ***************/

@@ -158,7 +158,7 @@
     }
     &:not(:hover) {
         .fa-circle-check {
-            transform: translateX(50%) rotate();
+            transform: translateX(50%);
             transition: 0.5s;
         }
     }
