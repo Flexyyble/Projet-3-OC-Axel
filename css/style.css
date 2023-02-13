@@ -569,6 +569,12 @@ li a {
   }
 }
 /* --------------END FADE IN-----------------*/
+@media all and (min-width: 693px) and (max-width: 992px) {
+  .card-list {
+    max-width: 450px;
+    overflow-x: scroll;
+  }
+}
 @media all and (min-width: 993px) {
   /************************************ HOMEPAGE ******************************************/
   .use_list-display {
